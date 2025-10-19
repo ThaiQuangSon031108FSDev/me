@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gửi Mẹ, Người Con Yêu Thương Nhất</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="cover-screen" class="screen active">
+      <div class="card cover-card">
+        <h1>Gửi Mẹ,</h1>
+        <p class="subtitle">Người phụ nữ con yêu thương nhất.</p>
+        <p class="instruction">
+          Nhân ngày 20/10, con có một món quà nhỏ. Mẹ hãy nhấn nút ở dưới để mở
+          ra nhé.
+        </p>
+        <button id="open-btn">Mở Nhật Ký 📖</button>
+      </div>
+    </div>
+
+    <div id="gallery-screen" class="screen">
+      <div class="gallery-container">
+        <img id="gallery-image" src="" alt="Kỷ niệm của mẹ và con" />
+        <p id="gallery-caption"></p>
+        <button id="next-btn">Xem tiếp &gt;</button>
+      </div>
+    </div>
+
+    <div id="letter-screen" class="screen">
+      <div class="card letter-card">
+        <h2>Mẹ yêu quý,</h2>
+        <p id="letter-text"></p>
+        <button id="finish-letter-btn" class="hidden">Con đã đọc xong</button>
+      </div>
+    </div>
+
+    <div id="promise-screen" class="screen">
+      <div class="card promise-card">
+        <img src="con_va_me.jpg" class="avatar" alt="Ảnh của con và mẹ" />
+        <h2>"Con sẽ luôn cố gắng để trở thành niềm tự hào của Mẹ."</h2>
+        <p>
+          Chúc mẹ một ngày 20/10 thật nhiều niềm vui và hạnh phúc. Con yêu mẹ
+          rất nhiều.
+        </p>
+      </div>
+    </div>
+
+    <audio id="background-music" src="nhac_nen_cho_me.mp3" loop></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
